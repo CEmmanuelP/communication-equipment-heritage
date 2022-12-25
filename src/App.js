@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ImageButton from "./components/ImageButton";
+import { datas } from "./data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-wrapper">
+      <div className="container">
+        <div className="header">
+          <div className="title">3D EQUIPMENT GALLERY</div>
+        </div>
+        <div className="image-buttons-wrapper">
+          {datas.map((data) => {
+            return <ImageButton key={data.id} data={data} />;
+          })}
+        </div>
+      </div>
     </div>
   );
 }
