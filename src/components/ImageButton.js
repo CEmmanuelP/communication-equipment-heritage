@@ -3,9 +3,7 @@ import Jsv from "./Jsv";
 import Modal from "./Modal";
 import { motion } from "framer-motion";
 
-const totalFrames = 18;
-
-export default function ImageButton() {
+export default function ImageButton({ data }) {
   const modalRef = useRef();
   return (
     <div style={{ height: "400px", width: "500px" }}>
@@ -19,7 +17,7 @@ export default function ImageButton() {
         style={{
           width: "100%",
           height: "100%",
-          backgroundImage: `url('/images/heritage/20180906-001-blauw.jpeg')`,
+          backgroundImage: "url(" + data.src + ")",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           objectFit: "contain",
@@ -35,7 +33,7 @@ export default function ImageButton() {
         onClick={() => modalRef.current.open()}
       ></motion.button>
       <Modal ref={modalRef}>
-        <Jsv totalFrames={totalFrames} />
+        <Jsv data={data} />
       </Modal>
     </div>
   );

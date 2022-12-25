@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const totalFrames = 18;
 
-const Jsv = (props) => {
+const Jsv = ({ data }) => {
   const viewer = new JavascriptViewer({
     mainHolderId: "jsv-holder",
     mainImageId: "jsv-image",
@@ -11,7 +11,7 @@ const Jsv = (props) => {
     speed: 70,
     defaultProgressBar: true,
     zoom: true,
-    imageUrlFormat: "20180906-0xx-blauw.jpeg",
+    imageUrlFormat: data.imageUrlFormat,
     // notificationConfig: {
     //   dragToRotate: {
     //     showStartToRotateDefaultNotification: true,
@@ -48,7 +48,7 @@ const Jsv = (props) => {
       <img
         id="jsv-image"
         alt="example"
-        src="/images/heritage/20180906-001-blauw.jpeg"
+        src={data.src}
         showstarttorotatedefaultnotification="true"
       />
     </div>
