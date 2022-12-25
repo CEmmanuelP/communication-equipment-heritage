@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/communication-equipment-heritage/static/css/main.5cd3c51c.css",
+    "main.js": "/communication-equipment-heritage/static/js/main.94dc4885.js",
+    "index.html": "/communication-equipment-heritage/index.html",
+    "main.5cd3c51c.css.map": "/communication-equipment-heritage/static/css/main.5cd3c51c.css.map",
+    "main.94dc4885.js.map": "/communication-equipment-heritage/static/js/main.94dc4885.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cd3c51c.css",
+    "static/js/main.94dc4885.js"
+  ]
+}
