@@ -1,7 +1,7 @@
 import { JavascriptViewer } from "@3dweb/360javascriptviewer";
 import { useEffect } from "react";
 
-const totalFrames = 18;
+const totalFrames = 72;
 
 const Jsv = ({ data }) => {
   const viewer = new JavascriptViewer({
@@ -12,6 +12,7 @@ const Jsv = ({ data }) => {
     defaultProgressBar: true,
     zoom: true,
     imageUrlFormat: data.imageUrlFormat,
+    reverse: data.reverse,
     // notificationConfig: {
     //   dragToRotate: {
     //     showStartToRotateDefaultNotification: true,

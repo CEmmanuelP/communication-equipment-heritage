@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function ImageButton({ data }) {
   const modalRef = useRef();
   return (
-    <div style={{ height: "400px", width: "500px" }}>
+    <div style={{ height: "300px", width: "360px" }}>
       <motion.button
         whileHover={{
           scale: 1.02,
