@@ -129,13 +129,13 @@ code {
 
   #jsv-holder {
     width: 360px;
-    height: 300px;
+    height: 310px;
     position: relative;
   }
 
   #jsv-holder img {
     width: 360px;
-    height: 260px;
+    height: 300px;
     border-radius: 5%;
     object-fit: cover;
   }
