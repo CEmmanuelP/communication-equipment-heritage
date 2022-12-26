@@ -98,6 +98,19 @@ code {
   text-align: center;
 }
 
+#jsv-holder {
+  width: 420px;
+  height: 360px;
+  position: relative;
+}
+
+#jsv-holder img {
+  width: 420px;
+  height: 340px;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .modal-content-wrapper {
     position: fixed;
@@ -122,21 +135,8 @@ code {
 
   #jsv-holder img {
     width: 360px;
-    height: 250px;
+    height: 220px;
     border-radius: 5%;
     object-fit: cover;
   }
-}
-
-#jsv-holder {
-  width: 420px;
-  height: 360px;
-  position: relative;
-}
-
-#jsv-holder img {
-  width: 420px;
-  height: 340px;
-  border-radius: 5%;
-  object-fit: cover;
 }
