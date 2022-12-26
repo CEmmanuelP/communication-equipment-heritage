@@ -115,7 +115,7 @@ code {
   .modal-content-wrapper {
     position: fixed;
     width: 360px;
-    height: 280px;
+    height: 320px;
     background: white;
     margin: auto;
     top: 0;
@@ -129,13 +129,13 @@ code {
 
   #jsv-holder {
     width: 360px;
-    height: 260px;
+    height: 300px;
     position: relative;
   }
 
   #jsv-holder img {
     width: 360px;
-    height: 220px;
+    height: 260px;
     border-radius: 5%;
     object-fit: cover;
   }
