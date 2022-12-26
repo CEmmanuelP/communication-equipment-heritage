@@ -27,13 +27,19 @@ const Modal = forwardRef((props, ref) => {
           />
 
           <motion.div className="modal-content-wrapper">
-            <AiOutlineClose
-              style={{ cursor: "pointer" }}
-              onClick={() => setOpen(false)}
-            />
+            <div style={{ display: "flex", justifyContent: "end" }}>
+              <AiOutlineClose
+                style={{
+                  cursor: "pointer",
+                  paddingRight: "3px",
+                }}
+                onClick={() => setOpen(false)}
+              />
+            </div>
             <motion.div
               // initial={{ scale: 0 }}
               // animate={{ scale: 1, transition: { duration: 0.3 } }}
+
               exit={{ opacity: 0 }}
               className="modal-content"
             >
