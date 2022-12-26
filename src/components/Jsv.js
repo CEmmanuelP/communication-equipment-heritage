@@ -12,7 +12,7 @@ const Jsv = ({ data }) => {
     defaultProgressBar: true,
     zoom: true,
     imageUrlFormat: data.imageUrlFormat,
-    reverse: data.reverse,
+
     // notificationConfig: {
     //   dragToRotate: {
     //     showStartToRotateDefaultNotification: true,
