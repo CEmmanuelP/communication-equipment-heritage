@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/communication-equipment-heritage/static/css/main.9bb5adc6.css",
-    "main.js": "/communication-equipment-heritage/static/js/main.9a14db8a.js",
+    "main.css": "/communication-equipment-heritage/static/css/main.9adb1c0b.css",
+    "main.js": "/communication-equipment-heritage/static/js/main.414ac1be.js",
     "index.html": "/communication-equipment-heritage/index.html",
-    "main.9bb5adc6.css.map": "/communication-equipment-heritage/static/css/main.9bb5adc6.css.map",
-    "main.9a14db8a.js.map": "/communication-equipment-heritage/static/js/main.9a14db8a.js.map"
+    "main.9adb1c0b.css.map": "/communication-equipment-heritage/static/css/main.9adb1c0b.css.map",
+    "main.414ac1be.js.map": "/communication-equipment-heritage/static/js/main.414ac1be.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bb5adc6.css",
-    "static/js/main.9a14db8a.js"
+    "static/css/main.9adb1c0b.css",
+    "static/js/main.414ac1be.js"
   ]
 }
