@@ -12,4 +12,19 @@ export const datas = [
     src: `/communication-equipment-heritage/images/heritage/2/C0735001.jpg`,
     imageUrlFormat: "C07350xx.jpg",
   },
+  {
+    id: 3,
+    src: `/communication-equipment-heritage/images/heritage/black_telephone/BlackTelephone-01.jpg`,
+    imageUrlFormat: "BlackTelephone-xx.jpg",
+  },
+  {
+    id: 4,
+    src: `/communication-equipment-heritage/images/heritage/green_telephone/GreenTelephone-01.jpg`,
+    imageUrlFormat: "GreenTelephone-xx.jpg",
+  },
+  {
+    id: 5,
+    src: `/communication-equipment-heritage/images/heritage/ivory_telephone/IvoryTelephone-01.jpg`,
+    imageUrlFormat: "IvoryTelephone-xx.jpg",
+  },
 ];

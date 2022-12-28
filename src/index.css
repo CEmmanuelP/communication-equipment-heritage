@@ -34,7 +34,7 @@ code {
   min-width: 350px;
   max-width: 578px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   background: white;
   padding: 0.3rem;
@@ -84,7 +84,7 @@ code {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 6px;
+  overflow: hidden;
   border-radius: 5%;
   z-index: 5;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
@@ -106,7 +106,7 @@ code {
 
 #jsv-holder img {
   width: 420px;
-  height: 340px;
+  height: 360px;
   border-radius: 5%;
   object-fit: cover;
 }

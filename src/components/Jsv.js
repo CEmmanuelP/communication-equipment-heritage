@@ -8,7 +8,7 @@ const Jsv = ({ data }) => {
     mainHolderId: "jsv-holder",
     mainImageId: "jsv-image",
     totalFrames: totalFrames,
-    speed: 70,
+    speed: 60,
     defaultProgressBar: true,
     zoom: true,
     imageUrlFormat: data.imageUrlFormat,
@@ -34,9 +34,9 @@ const Jsv = ({ data }) => {
     });
 
     viewer.start().then(() => {
-      viewer.rotateDegrees(180).then(() => {
-        // continue with your amazing intro
-      });
+      // viewer.rotateDegrees(180).then(() => {
+      //   // continue with your amazing intro
+      // });
     });
 
     return () => {
