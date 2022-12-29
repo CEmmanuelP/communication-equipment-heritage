@@ -1,13 +1,12 @@
 import { JavascriptViewer } from "@3dweb/360javascriptviewer";
-import { useEffect } from "react";
 
-const totalFrames = 72;
+// const totalFrames = 72;
 
 const Jsv = ({ data }) => {
   const viewer = new JavascriptViewer({
     mainHolderId: "jsv-holder",
     mainImageId: "jsv-image",
-    totalFrames: totalFrames,
+    totalFrames: data.totalFrames,
     defaultProgressBar: true,
     zoom: true,
     imageUrlFormat: data.imageUrlFormat,
@@ -39,6 +38,8 @@ const Jsv = ({ data }) => {
     })
     .catch((msg) => console.warn(msg));
 
+  viewer.destroy().catch((err) => console.error(err));
+
   // useEffect(() => {
   //   // use events for example
   //   viewer.events().loadImage.on((progress) => {
@@ -49,7 +50,6 @@ const Jsv = ({ data }) => {
   //     // use a promise or a start event to trigger things
   //     // console.log(result);
   //   });
-
   //   viewer
   //     .start()
   //     .then(() => {

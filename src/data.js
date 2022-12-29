@@ -1,30 +1,28 @@
 // const url = "https://cemmanuelp.github.io/communication-equipment-heritage";
 
 export const datas = [
-  // {
-  //   id: 1,
-  //   src: `https://cdn1.360-javascriptviewer.com/images/blue-shoe-small/20180906-001-blauw.jpg`,
-  //   imageUrlFormat: "20180906-0xx-blauw.jpg",
-  //   reverse: true,
-  // },
+  {
+    id: 1,
+    src: `/communication-equipment-heritage/images/heritage/2/retro_001.jpeg`,
+    imageUrlFormat: "retro_0xx.jpeg",
+    totalFrames: 72,
+  },
   {
     id: 2,
-    src: `/communication-equipment-heritage/images/heritage/2/C0735001.jpg`,
-    imageUrlFormat: "C07350xx.jpg",
+    src: `/communication-equipment-heritage/images/heritage/black_telephone/black_telephone_01.jpg`,
+    imageUrlFormat: "black_telephone_xx.jpg",
+    totalFrames: 72,
   },
   {
     id: 3,
-    src: `/communication-equipment-heritage/images/heritage/black_telephone/BlackTelephone-01.jpg`,
-    imageUrlFormat: "BlackTelephone-xx.jpg",
+    src: `/communication-equipment-heritage/images/heritage/green_telephone/green_telephone_01.jpg`,
+    imageUrlFormat: "green_telephone_xx.jpg",
+    totalFrames: 72,
   },
   {
     id: 4,
-    src: `/communication-equipment-heritage/images/heritage/green_telephone/GreenTelephone-01.jpg`,
-    imageUrlFormat: "GreenTelephone-xx.jpg",
-  },
-  {
-    id: 5,
-    src: `/communication-equipment-heritage/images/heritage/ivory_telephone/IvoryTelephone-01.jpg`,
-    imageUrlFormat: "IvoryTelephone-xx.jpg",
+    src: `/communication-equipment-heritage/images/heritage/ivory_telephone/ivory_telephone_01.jpg`,
+    imageUrlFormat: "ivory_telephone_xx.jpg",
+    totalFrames: 72,
   },
 ];
