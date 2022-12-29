@@ -8,7 +8,6 @@ const Jsv = ({ data }) => {
     mainHolderId: "jsv-holder",
     mainImageId: "jsv-image",
     totalFrames: totalFrames,
-    speed: 60,
     defaultProgressBar: true,
     zoom: true,
     imageUrlFormat: data.imageUrlFormat,
@@ -22,27 +21,48 @@ const Jsv = ({ data }) => {
     // },
   });
 
-  useEffect(() => {
-    // use events for example
-    viewer.events().loadImage.on((progress) => {
-      // use this for your own progress bar
-      console.log(`loading ${progress.percentage}%`);
-    });
-    viewer.events().started.on((result) => {
-      // use a promise or a start event to trigger things
-      // console.log(result);
-    });
+  viewer.events().loadImage.on((progress) => {
+    // use this for your own progress bar
+    console.log(`loading ${progress.percentage}%`);
+  });
+  viewer.events().started.on((result) => {
+    // use a promise or a start event to trigger things
+    // console.log(result);
+  });
 
-    viewer.start().then(() => {
+  viewer
+    .start()
+    .then(() => {
       // viewer.rotateDegrees(180).then(() => {
       //   // continue with your amazing intro
       // });
-    });
+    })
+    .catch((msg) => console.warn(msg));
 
-    return () => {
-      viewer.destroy();
-    };
-  }, []);
+  // useEffect(() => {
+  //   // use events for example
+  //   viewer.events().loadImage.on((progress) => {
+  //     // use this for your own progress bar
+  //     console.log(`loading ${progress.percentage}%`);
+  //   });
+  //   viewer.events().started.on((result) => {
+  //     // use a promise or a start event to trigger things
+  //     // console.log(result);
+  //   });
+
+  //   viewer
+  //     .start()
+  //     .then(() => {
+  //       // viewer.rotateDegrees(180).then(() => {
+  //       //   // continue with your amazing intro
+  //       // });
+  //     })
+  //     .catch((msg) => console.warn(msg));
+
+  //   return () => {
+  //     viewer.destroy().catch((err) => console.error(err));
+  //   };
+  // }, []);
 
   return (
     <div id="jsv-holder">
